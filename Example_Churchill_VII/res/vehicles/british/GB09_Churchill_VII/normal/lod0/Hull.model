@@ -1,0 +1,10 @@
+<hull.model>
+  <materialNames></materialNames>
+  <visibilityBox>
+    <min>-1.77789 -0.965207 -3.56471</min>
+    <max>1.76896 0.478944 3.82832</max>
+  </visibilityBox>
+  <extent>32</extent>
+  <tank>true</tank>
+  <nodefullVisual>vehicles/british/GB09_Churchill_VII/normal/lod0/Hull_UML</nodefullVisual>
+</hull.model>

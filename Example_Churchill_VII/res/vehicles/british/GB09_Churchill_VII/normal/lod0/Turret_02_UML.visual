@@ -1,0 +1,241 @@
+<exporter_001_temp.visual>
+	<node>
+		<identifier>	Scene Root	</identifier>
+		<transform>
+			<row0>	1.000000 0.000000 0.000000	</row0>
+			<row1>	0.000000 1.000000 0.000000	</row1>
+			<row2>	0.000000 0.000000 1.000000	</row2>
+			<row3>	0.000000 0.000000 0.000000	</row3>
+		</transform>
+		<node>
+			<identifier>	Turret_02	</identifier>
+			<transform>
+				<row0>	1.000000 0.000000 0.000000	</row0>
+				<row1>	0.000000 1.000000 0.000000	</row1>
+				<row2>	0.000000 0.000000 1.000000	</row2>
+				<row3>	0.000000 0.000000 0.000000	</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>	miniturret_joint_T0	</identifier>
+			<transform>
+				<row0>	1.000000 -90.000000 90.000000	</row0>
+				<row1>	0.000000 1.000000 0.000000	</row1>
+				<row2>	0.000000 0.000000 1.000000	</row2>
+				<row3>	-0.384620 0.937852 -0.277249	</row3>
+			</transform>
+			<node>
+				<identifier>	Cupola	</identifier>
+				<transform>
+					<row0>	1.000000 0.000000 0.000000	</row0>
+					<row1>	0.000000 1.000000 0.000000	</row1>
+					<row2>	0.000000 0.000000 1.000000	</row2>
+					<row3>	0.000000 0.000000 0.000000	</row3>
+				</transform>
+			</node>
+		</node>
+		<node>
+			<identifier>	LeftPeriscopeBase	</identifier>
+			<transform>
+				<row0>	1.000000 0.000000 0.000000	</row0>
+				<row1>	0.000000 0.982871 0.184296	</row1>
+				<row2>	0.000000 -0.184296 0.982871	</row2>
+				<row3>	-0.555231 0.813996 0.430753	</row3>
+			</transform>
+			<node>
+				<identifier>	autorotor_joint_0	</identifier>
+				<transform>
+					<row0>	1.000000 0.000000 1.900000	</row0>
+					<row1>	0.000000 1.000000 0.000000	</row1>
+					<row2>	0.000000 0.000000 1.000000	</row2>
+					<row3>	0.000000 0.000000 0.000000	</row3>
+				</transform>
+				<node>
+					<identifier>	LeftPeriscope	</identifier>
+					<transform>
+						<row0>	1.000000 0.000000 0.000000	</row0>
+						<row1>	0.000000 1.000000 0.000000	</row1>
+						<row2>	0.000000 0.000000 1.000000	</row2>
+						<row3>	0.000000 0.000000 0.000000	</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+		<node>
+			<identifier>	RightPeriscopeBase	</identifier>
+			<transform>
+				<row0>	1.000000 0.000000 0.000000	</row0>
+				<row1>	0.000000 0.979977 0.199112	</row1>
+				<row2>	0.000000 -0.199112 0.979977	</row2>
+				<row3>	0.377134 0.823585 0.361718	</row3>
+			</transform>
+			<node>
+				<identifier>	autorotor_joint_1	</identifier>
+				<transform>
+					<row0>	1.000000 0.000000 2.200000	</row0>
+					<row1>	0.000000 1.000000 0.000000	</row1>
+					<row2>	0.000000 0.000000 1.000000	</row2>
+					<row3>	0.000000 0.000000 0.000000	</row3>
+				</transform>
+				<node>
+					<identifier>	RightPeriscope	</identifier>
+					<transform>
+						<row0>	1.000000 0.000000 0.000000	</row0>
+						<row1>	0.000000 1.000000 0.000000	</row1>
+						<row2>	0.000000 0.000000 1.000000	</row2>
+						<row3>	0.000000 0.000000 0.000000	</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+		<node>
+			<identifier>HP_gunJoint</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>-0.097831 0.382141 0.852526</row3>
+			</transform>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>	false	</treatAsWorldSpaceObject>
+		<node>	RightPeriscope	</node>
+		<geometry>
+			<vertices>	RightPeriscope.vertices	</vertices>
+			<primitive>	RightPeriscope.indices	</primitive>
+			<primitiveGroup>	0
+				<material>
+					<identifier>tank_turret_02</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>g_useNormalPackDXT1<Bool>false</Bool>
+					</property>
+					<property>g_detailUVTiling<Vector4>4.20822 4.20822 0.000000 0.000000</Vector4>
+					</property>
+					<property>g_useDetailMetallic<Bool>true</Bool>
+					</property>
+					<property>diffuseMap<Texture>vehicles/british/GB09_Churchill_VII/Churchill_VII_turret_02_AM.dds</Texture>
+					</property>
+					<property>normalMap<Texture>vehicles/british/GB09_Churchill_VII/Churchill_VII_turret_02_ANM.dds</Texture>
+					</property>
+					<property>metallicGlossMap<Texture>vehicles/british/GB09_Churchill_VII/Churchill_VII_turret_02_GMM.dds</Texture>
+					</property>
+					<property>excludeMaskAndAOMap<Texture>vehicles/british/GB09_Churchill_VII/Churchill_VII_turret_02_AO.dds</Texture>
+					</property>
+					<property>colorIdMap<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>metallicDetailMap<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>	false	</treatAsWorldSpaceObject>
+		<node>	Cupola	</node>
+		<geometry>
+			<vertices>	Cupola.vertices	</vertices>
+			<primitive>	Cupola.indices	</primitive>
+			<primitiveGroup>	0
+				<material>
+					<identifier>tank_turret_02</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>g_useNormalPackDXT1<Bool>false</Bool>
+					</property>
+					<property>g_detailUVTiling<Vector4>4.20822 4.20822 0.000000 0.000000</Vector4>
+					</property>
+					<property>g_useDetailMetallic<Bool>true</Bool>
+					</property>
+					<property>diffuseMap<Texture>vehicles/british/GB09_Churchill_VII/Churchill_VII_turret_02_AM.dds</Texture>
+					</property>
+					<property>normalMap<Texture>vehicles/british/GB09_Churchill_VII/Churchill_VII_turret_02_ANM.dds</Texture>
+					</property>
+					<property>metallicGlossMap<Texture>vehicles/british/GB09_Churchill_VII/Churchill_VII_turret_02_GMM.dds</Texture>
+					</property>
+					<property>excludeMaskAndAOMap<Texture>vehicles/british/GB09_Churchill_VII/Churchill_VII_turret_02_AO.dds</Texture>
+					</property>
+					<property>colorIdMap<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>metallicDetailMap<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>	false	</treatAsWorldSpaceObject>
+		<node>	LeftPeriscope	</node>
+		<geometry>
+			<vertices>	LeftPeriscope.vertices	</vertices>
+			<primitive>	LeftPeriscope.indices	</primitive>
+			<primitiveGroup>	0
+				<material>
+					<identifier>tank_turret_02</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>g_useNormalPackDXT1<Bool>false</Bool>
+					</property>
+					<property>g_detailUVTiling<Vector4>4.20822 4.20822 0.000000 0.000000</Vector4>
+					</property>
+					<property>g_useDetailMetallic<Bool>true</Bool>
+					</property>
+					<property>diffuseMap<Texture>vehicles/british/GB09_Churchill_VII/Churchill_VII_turret_02_AM.dds</Texture>
+					</property>
+					<property>normalMap<Texture>vehicles/british/GB09_Churchill_VII/Churchill_VII_turret_02_ANM.dds</Texture>
+					</property>
+					<property>metallicGlossMap<Texture>vehicles/british/GB09_Churchill_VII/Churchill_VII_turret_02_GMM.dds</Texture>
+					</property>
+					<property>excludeMaskAndAOMap<Texture>vehicles/british/GB09_Churchill_VII/Churchill_VII_turret_02_AO.dds</Texture>
+					</property>
+					<property>colorIdMap<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>metallicDetailMap<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>	false	</treatAsWorldSpaceObject>
+		<node>	Turret_02	</node>
+		<geometry>
+			<vertices>	Turret_02.vertices	</vertices>
+			<primitive>	Turret_02.indices	</primitive>
+			<primitiveGroup>	0
+				<material>
+					<identifier>tank_turret_02</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>g_useNormalPackDXT1<Bool>false</Bool>
+					</property>
+					<property>g_detailUVTiling<Vector4>4.20822 4.20822 0.000000 0.000000</Vector4>
+					</property>
+					<property>g_useDetailMetallic<Bool>true</Bool>
+					</property>
+					<property>diffuseMap<Texture>vehicles/british/GB09_Churchill_VII/Churchill_VII_turret_02_AM.dds</Texture>
+					</property>
+					<property>normalMap<Texture>vehicles/british/GB09_Churchill_VII/Churchill_VII_turret_02_ANM.dds</Texture>
+					</property>
+					<property>metallicGlossMap<Texture>vehicles/british/GB09_Churchill_VII/Churchill_VII_turret_02_GMM.dds</Texture>
+					</property>
+					<property>excludeMaskAndAOMap<Texture>vehicles/british/GB09_Churchill_VII/Churchill_VII_turret_02_AO.dds</Texture>
+					</property>
+					<property>colorIdMap<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>metallicDetailMap<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>	-1.002302 -0.000003 -1.580485	</min>
+		<max>	0.908934 1.923630 1.096174	</max>
+	</boundingBox>
+</exporter_001_temp.visual>
